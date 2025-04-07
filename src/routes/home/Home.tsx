@@ -1,8 +1,10 @@
+import Product from "../../components/Product/Product";
+
 export default function Home() {
   return (
     <div>
-        <div className="bg-blue-500 text-white p-4">
-      This should have a blue background
+        <div className="">
+      <Product />
     </div>
     </div>
   );

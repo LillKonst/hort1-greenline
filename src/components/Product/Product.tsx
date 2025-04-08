@@ -2,11 +2,11 @@ import bikeImg from "../../images/GreenlineBike.jpg";
 
 export default function Product() {
   return(
-    <div className="flex m-2 self-center-safe">
+    <div className="sm:w-11/12 md:w-10/12 justify-center flex flex-col md:flex-row m-2 self-center-safe">
       <div className="w-full m-2">
-        <img src={bikeImg} alt="A red electrical bike" />
+        <img src={bikeImg} alt="A red electrical bike" className=""/>
       </div>
-      <div className="w-full m-2">
+      <div className="m-2">
         <h1 className="text-3xl font-bold">Hort1 <span className="text-customGreen">Greenline</span></h1>
         <p className="text-lg my-2">
         Dette er elsykkelen for deg som liker både byliv og natur. Med <span className="font-semibold">Hort1 <span className="text-customGreen">Greenline</span></span> får du blant annet: 

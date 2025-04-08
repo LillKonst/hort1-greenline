@@ -2,7 +2,8 @@
 
 @theme {
   --font-display: "Satoshi", "sans-serif";
-  --breakpoint-3xl: 120rem;
+  --breakpoint-xxs: 400px;
+  --breakpoint-xs: 500px;
   --color-customBlack: #212226 ;
   --color-customGreen: #35D927 ;
    

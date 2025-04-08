@@ -1,3 +1,15 @@
+# Hort1 Greenline 🚲🌿
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5e84fb6a-7124-46ca-861e-4b4da8f75d14/deploy-status)](https://app.netlify.com/sites/hort1/deploys)
+
+Dette er nettsiden for Hort1 Greenline, bygget med React, Tailwind og kjærlighet 💚
+
+
+
+
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

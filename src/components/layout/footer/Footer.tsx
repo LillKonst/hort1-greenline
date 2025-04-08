@@ -5,7 +5,7 @@ export default function Footer() {
     <div className="bottom-0 right-0 left-0 bg-customBlack text-white w-full h-fit flex flex-col justify-center">
     <div className="flex flex-col">
       <img src={logo} alt="logo" className="h-[80px] p-3 pt-0"/>
-      <p className="text-center">Copyrights Hort1 Greenline 2025</p>
+      <p className="text-center">© Hort1 Greenline 2025</p>
     </div>
 
     <div className="text-center">

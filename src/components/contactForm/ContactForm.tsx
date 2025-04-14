@@ -34,7 +34,7 @@ export default function ContactForm ({ onSuccess }: ContactFormProps) {
       data-netlify="true"
       netlify-honeypot="bot-field"
       onSubmit={handleSubmit}
-      className="w-full max-w-xl mx-auto flex flex-col gap-4 p-4"
+      className="w-full max-w-xl mx-auto flex flex-col gap-4 p-2 md:p-4"
     >
       {/* Required hidden input for Netlify */}
       <input type="hidden" name="form-name" value="kontakt" />
@@ -63,17 +63,15 @@ export default function ContactForm ({ onSuccess }: ContactFormProps) {
         type="email"
         name="epost"
         placeholder="E-postadresse"
-        required
         className="border border-gray-300 rounded p-2"
       />
 
-      <input
-        type="text"
-        name="subject"
-        placeholder="Emne"
-        required
-        className="border border-gray-300 rounded p-2"
+      <input 
+        type="hidden" 
+        name="subject" 
+        value="Henvendelse fra Hort1.no" 
       />
+
 
       <textarea
         name="melding"

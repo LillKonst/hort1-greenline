@@ -11,7 +11,7 @@ export default function ContactModal ({ isOpen, onClose, onSuccess }: ContactMod
 
   return (
     <div className="fixed inset-0 z-50 bg-black/50 bg-opacity-50 flex items-center justify-center">
-      <div className="bg-white rounded-xl shadow-xl w-full max-w-xl p-6 relative">
+      <div className="bg-white rounded-xl shadow-xl w-full max-w-xl m-2 p-2 md:p-6 relative">
 
         <button
           onClick={onClose}

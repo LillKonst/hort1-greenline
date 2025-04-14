@@ -15,7 +15,7 @@ export default function Navbar() {
       `}
     >
           <a>GREENLINE</a>
-          <a>OM OSS</a>
+          <a>KONTAKT</a>
 
           
         </nav>

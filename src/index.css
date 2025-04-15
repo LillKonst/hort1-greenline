@@ -1,10 +1,73 @@
-@import "tailwindcss";
+/* @import "tailwindcss";
+
+@font-face {
+  font-family: "RobotoFlex";
+  src: url("../public/fonts/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../public/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+:root {
+  font-family: var(--font-display);
+  font-variation-settings: "wght" 400;
+}
+
+h1, h2 {
+  font-family: "RobotoFlex";
+}
+
+p {
+  font-family: "OpenSans";
+}
+
 
 @theme {
-  --font-display: "Satoshi", "sans-serif";
+  --font-display: "RobotoFlex", "sans-serif";
+  --font-body: "OpenSans", "sans-serif"; 
+
+
   --breakpoint-xxs: 400px;
   --breakpoint-xs: 500px;
   --color-customBlack: #212226 ;
   --color-customGreen: #35D927 ;
    
+} */
+
+
+@import "tailwindcss";
+
+/* ✅ Keep the funky filename if it's working */
+@font-face {
+  font-family: "RobotoFlex";
+  src: url("/fonts/RobotoFlex-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900; /* IMPORTANT: declares full weight range */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("/fonts/OpenSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ✅ Set fallback in CSS variable only — don’t set font here */
+@theme {
+  --font-display: "RobotoFlex", "sans-serif";
+  --font-body: "OpenSans", "sans-serif";
+
+  --breakpoint-xxs: 400px;
+  --breakpoint-xs: 500px;
+  --color-customBlack: #212226;
+  --color-customGreen: #35D927;
 }

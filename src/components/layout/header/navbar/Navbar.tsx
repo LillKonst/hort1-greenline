@@ -5,6 +5,11 @@ export function Home() {
   return <div>Home</div>;
 }
 
+export function GreenlineProduct() {
+  return <div>GreenlineProduct</div>;
+}
+
+
 export function Contact() {
   return <div>Contact</div>;
 }
@@ -37,22 +42,22 @@ export default function Navbar() {
       `}
     >
           <Link
-            to="/"
+            to="/GreenlineProduct"
             onClick={() => setIsMenuOpen(false)}
             className={`${
-              location.pathname === "/Home" ? "font-semibold" : ""
+              location.pathname === "/GreenlineProduct" ? "font-normal" : "font-normal"
             }`}
            >
-            GREENLINE
+            Greenline El-Sykkel
           </Link>
           <Link
             to="/Contact"
             onClick={() => setIsMenuOpen(false)}
             className={`${
-              location.pathname === "/Contact" ? "font-semibold" : ""
+              location.pathname === "/Contact" ? "font-normal" : "font-normal"
             }`}
           >
-            KONTAKT
+            Kontakt
               
           </Link>
 

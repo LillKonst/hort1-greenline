@@ -1,6 +1,12 @@
 import logo from "../../../images/LOGO-HORT1.svg";
 import Navbar from "./navbar/Navbar";
 import { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
+
+export function Home() {
+  return <div>Home</div>;
+}
+
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,9 +47,10 @@ export default function Header() {
 
 
   return (
-    <div className="top-0 right-0 left-0 bg-customBlack w-full h-[80px] flex justify-center">
-      <div className="w-full sm:w-11/12 flex justify-between items-center">
-        <img src={logo} alt="logo" className="h-[80px] p-3 pt-0"/>
+    <div>
+    <div className="top-0 right-0 left-0 bg-customBlack w-full h-[120px] shadow flex justify-center">
+      <div className="w-full sm:w-11/12 lg:w-10/12 flex justify-between items-center">
+       <Link to="/"> <img src={logo} alt="logo" className="h-[100px] p-3 pt-0"/></Link>
 
         <button 
           ref={buttonRef} 
@@ -73,6 +80,11 @@ export default function Header() {
         ): null}
           
       </div>
+      
+    </div>
+    <div className="w-full h-[25px] bg-customRed text-center">
+      <h2 className="text-lg font-semibold text-white">POP-UP UTSTILLING 13/4 - 31/5</h2>
+    </div>
     </div>
   );
 }

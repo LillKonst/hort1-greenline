@@ -14,7 +14,7 @@ export default function Product() {
   };
 
   return(
-    <div className="w-full sm:w-11/12 md:10/12 flex flex-col md:flex-row justify-center items-start p-2 self-center-safe md:gap-8">
+    <div className="w-full sm:w-11/12 lg:w-10/12 flex flex-col md:flex-row justify-center items-start p-2 self-center-safe md:gap-8">
         <ImageSlider />
         <ProductDetails onContactClick={() => setIsModalOpen(true)}/>
 

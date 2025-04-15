@@ -1,4 +1,26 @@
+import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
+
+export function Home() {
+  return <div>Home</div>;
+}
+
+export function Contact() {
+  return <div>Contact</div>;
+}
+
+export function RouteNotFound() {
+  return <div>Page not found</div>;
+}
+
 export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return(
     <div
     className={`
@@ -14,8 +36,25 @@ export default function Navbar() {
         md:mt-0 md:pt-0 md:p-0 md:flex-row
       `}
     >
-          <a>GREENLINE</a>
-          <a>KONTAKT</a>
+          <Link
+            to="/"
+            onClick={() => setIsMenuOpen(false)}
+            className={`${
+              location.pathname === "/Home" ? "font-semibold" : ""
+            }`}
+           >
+            GREENLINE
+          </Link>
+          <Link
+            to="/Contact"
+            onClick={() => setIsMenuOpen(false)}
+            className={`${
+              location.pathname === "/Contact" ? "font-semibold" : ""
+            }`}
+          >
+            KONTAKT
+              
+          </Link>
 
           
         </nav>

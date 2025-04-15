@@ -75,7 +75,7 @@ export default function Header() {
 
         {isMenuOpen || screenWidth >= 768 ? (
           <div ref={menuRef} className="z-40">
-          <Navbar />
+          <Navbar setIsMenuOpen={setIsMenuOpen} />
         </div>
         ): null}
           

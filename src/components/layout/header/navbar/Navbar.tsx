@@ -1,5 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
-import { useState } from "react";
+
+interface NavbarProps {
+  setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
 
 export function Home() {
   return <div>Home</div>;
@@ -18,13 +21,13 @@ export function RouteNotFound() {
   return <div>Page not found</div>;
 }
 
-export default function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+export default function Navbar({ setIsMenuOpen }: NavbarProps) {
+  // const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  // const toggleMenu = () => {
+  //   setIsMenuOpen(!isMenuOpen);
+  // };
 
   return(
     <div

@@ -15,23 +15,23 @@ export default function HomePopUp () {
     <div className="flex flex-col lg:flex-row gap-4 my-5">
 
    
-    <div className="w-full flex flex-col gap-4">
+    <div className="w-full lg:w-1/2 flex flex-col gap-6">
       <h2 className="text-5xl font-medium">POP-UP UTSTILLING</h2>
-      <div className="text-xl">
+      <div className="text-xl mt-2">
         <p>Vi stiller ut syklene i</p>
         <p>Apoteker gata 18, 3187 Horten</p>
       </div>
-      <h2 className="text-3xl font-medium">13/04 til 31/05</h2>
+      <h2 className="text-3xl font-medium mt-2">13/04 til 31/05</h2>
       
-      <p className="text-xl">Dette er en vindu-utstilling, men du kan avtale time på 434 16 838 / 400 50 009 
+      <p className="text-xl mt-2">Dette er en vindu-utstilling, men du kan avtale time på 434 16 838 / 400 50 009 
       eller her:</p>
       <button 
         onClick={() => setIsModalOpen(true)}
 
-        className="w-fit py-2 px-3 flex justify-center items-center md:items-start bg-customGreen text-white rounded-md gap-2 text-center transition-transform duration-300 hover:scale-105">SEND MELDING
+        className="w-fit py-2 px-3 flex justify-center items-center md:items-start bg-customGreen text-white text-2xl font-semibold rounded-md gap-2 text-center transition-transform duration-300 hover:scale-105">SEND MELDING
         </button>
     </div>
-    <div>
+    <div className="w-full lg:w-1/2">
       <img src={sykler} alt="sykler" className="rounded-md"/>
     </div>
 

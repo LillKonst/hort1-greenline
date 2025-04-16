@@ -15,7 +15,7 @@ export default function HomePopUp () {
     <div className="flex flex-col lg:flex-row gap-4 my-5">
 
    
-    <div className="w-1/2 flex flex-col gap-6">
+    <div className="w-full lg:w-1/2 flex flex-col gap-6">
       <h2 className="text-5xl font-medium">POP-UP UTSTILLING</h2>
       <div className="text-xl mt-2">
         <p>Vi stiller ut syklene i</p>
@@ -31,7 +31,7 @@ export default function HomePopUp () {
         className="w-fit py-2 px-3 flex justify-center items-center md:items-start bg-customGreen text-white text-2xl font-semibold rounded-md gap-2 text-center transition-transform duration-300 hover:scale-105">SEND MELDING
         </button>
     </div>
-    <div className="w-1/2">
+    <div className="w-full lg:w-1/2">
       <img src={sykler} alt="sykler" className="rounded-md"/>
     </div>
 

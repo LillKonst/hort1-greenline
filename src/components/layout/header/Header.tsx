@@ -55,7 +55,7 @@ export default function Header() {
         <button 
           ref={buttonRef} 
           onClick={toggleMenu} 
-          className="absolute top-2 right-3 m-2 p-2 h-fit bg-customGreen rounded-xl z-50 md:hidden"
+          className="absolute top-8 right-3 m-2 p-2 h-fit bg-customGreen rounded-xl z-50 md:hidden"
         >
 
          <svg

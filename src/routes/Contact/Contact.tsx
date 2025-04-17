@@ -24,7 +24,7 @@ export default function Contact() {
           <div className="w-full flex flex-col gap-4">      
             <div className="m-2 text-lg">
               <h2 className="text-2xl font-semibold">Ingar T Skytte</h2>
-              <p>Telefon: 434 16 838</p>
+              <p>Telefon: 934 16 838</p>
               <p>Epost: ingar@skytte.no</p>
             </div>
       

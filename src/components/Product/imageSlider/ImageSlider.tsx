@@ -15,7 +15,7 @@ export default function ImageSlider() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="w-full md:max-w-[300px] lg:max-w-[500px] self-center md:m-2 p-2 flex flex-col items-center">
+    <div className="w-full md:max-w-[300px] xl:max-w-[400px] self-center md:m-2 p-2 flex flex-col items-center">
       <div className="w-full aspect-square mb-4 rounded-lg overflow-hidden">
         <img 
           src={images[activeIndex]} 

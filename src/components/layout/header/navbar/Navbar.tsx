@@ -43,7 +43,7 @@ export default function Navbar({ setIsMenuOpen }: NavbarProps) {
             to="/GreenlineProduct"
             onClick={() => setIsMenuOpen(false)}
             className={`${
-              location.pathname === "/GreenlineProduct" ? "md:font-normal" : "md:font-normal"
+              location.pathname === "/GreenlineProduct" ? "hover:underline md:font-normal" : " hover:underline md:font-normal"
             }`}
            >
             Greenline El-Sykkel
@@ -52,7 +52,7 @@ export default function Navbar({ setIsMenuOpen }: NavbarProps) {
             to="/Contact"
             onClick={() => setIsMenuOpen(false)}
             className={`${
-              location.pathname === "/Contact" ? "md:font-normal" : "md:font-normal"
+              location.pathname === "/Contact" ? "hover:underline  md:font-normal" : "hover:underline  md:font-normal"
             }`}
           >
             Kontakt

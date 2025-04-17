@@ -2,6 +2,7 @@ import ImageSlider from "./imageSlider/ImageSlider";
 import ProductDetails from "./productDetails/ProductDetails";
 import { useState } from "react";
 import ContactModal from "../contactModal/ContactModal";
+import ProductInfo from "./productInfo/ProductInfo";
 
 export default function Product() {
   const [ isModalOpen, setIsModalOpen ] = useState(false);
@@ -14,9 +15,13 @@ export default function Product() {
   };
 
   return(
-    <div className="w-full sm:w-11/12 lg:w-10/12 flex flex-col md:flex-row justify-center items-start p-2 self-center-safe gap-8">
+    <div className="w-full sm:w-11/12 lg:w-10/12 flex flex-col p-2 self-center-safe gap-8">
+      <div className="flex flex-col md:flex-row justify-center items-start p-2 self-center-safe gap-8">
         <ImageSlider />
         <ProductDetails onContactClick={() => setIsModalOpen(true)}/>
+      </div>
+
+      <ProductInfo /> 
 
         <div>
         <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} onSuccess={handleSuccess}/>

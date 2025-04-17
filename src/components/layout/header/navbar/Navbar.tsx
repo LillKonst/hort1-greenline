@@ -27,15 +27,15 @@ export default function Navbar({ setIsMenuOpen }: NavbarProps) {
   return(
     <div
     className={`
-      absolute top-0 right-0 left-0 h-[146px] md:h-[0px]
+      absolute top-[135px] right-0 left-0 h-[180px] md:h-[0px]
       bg-white p-3 
-      md:static md:bg-transparent md:p-0 md:rounded-none
+      md:static md:bg-transparent md:p-0 md:rounded-none border-b-4 border-l-4 border-customGreen md:border-0
     `}
   >
     <nav
       className={`
-         pt-5 p-5 flex flex-col gap-6
-        text-black md:text-white text-xl font-bold md:font-semibold
+         pt-5 p-5 flex flex-col gap-8 md:gap-6
+        text-black md:text-white text-xl font-semibold
         md:mt-0 md:pt-0 md:p-0 md:flex-row
       `}
     >
@@ -43,7 +43,7 @@ export default function Navbar({ setIsMenuOpen }: NavbarProps) {
             to="/GreenlineProduct"
             onClick={() => setIsMenuOpen(false)}
             className={`${
-              location.pathname === "/GreenlineProduct" ? "font-normal" : "font-normal"
+              location.pathname === "/GreenlineProduct" ? "md:font-normal" : "md:font-normal"
             }`}
            >
             Greenline El-Sykkel
@@ -52,7 +52,7 @@ export default function Navbar({ setIsMenuOpen }: NavbarProps) {
             to="/Contact"
             onClick={() => setIsMenuOpen(false)}
             className={`${
-              location.pathname === "/Contact" ? "font-normal" : "font-normal"
+              location.pathname === "/Contact" ? "md:font-normal" : "md:font-normal"
             }`}
           >
             Kontakt

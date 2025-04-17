@@ -9,7 +9,7 @@ export function GreenlineProduct() {
 export default function Home() {
   return (
     <div className="w-full flex justify-center">
-      <div className="w-11/12 md:w-10/12 flex flex-col gap-2">
+      <div className="w-11/12 md:w-10/12 flex flex-col gap-4">
       
         <Link to="/GreenlineProduct" className="mb-10">
         <HomeBike />

@@ -23,7 +23,7 @@ export default function HomePopUp () {
       </div>
       <h2 className="text-3xl font-semibold md:mt-2">13/04 til 31/05</h2>
       
-      <p className="text-xl mt-2">Dette er en vindu-utstilling, men du kan avtale time på 434 16 838 / 400 50 009 
+      <p className="text-xl mt-2">Dette er en vindu-utstilling, men du kan avtale time på 934 16 838 / 400 50 009 
       eller her:</p>
       <button 
         onClick={() => setIsModalOpen(true)}

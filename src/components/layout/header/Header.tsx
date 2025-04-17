@@ -2,6 +2,7 @@ import logo from "../../../images/LOGO-HORT1.svg";
 import Navbar from "./navbar/Navbar";
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 
 export function Home() {
   return <div>Home</div>;
@@ -47,9 +48,9 @@ export default function Header() {
 
 
   return (
-    <div>
-    <div className="top-0 right-0 left-0 bg-customBlack w-full h-[120px] shadow flex justify-center">
-      <div className="w-full sm:w-11/12 lg:w-10/12 flex justify-between items-center">
+    <div className="relative">
+    <div className="fixed md:static top-0 right-0 left-0 bg-customBlack w-full h-[120px] shadow flex justify-center">
+      <div className="w-full sm:w-11/12 lg:w-10/12 flex justify-between items-center z-50">
        <Link to="/"> <img src={logo} alt="logo" className="h-[100px] p-3 pt-0"/></Link>
 
         <button 
@@ -73,16 +74,25 @@ export default function Header() {
           </svg>
         </button>
 
-        {isMenuOpen || screenWidth >= 768 ? (
-          <div ref={menuRef} className="z-40">
+        <AnimatePresence>
+        {(isMenuOpen || screenWidth >= 768) && (
+          <motion.div 
+            ref={menuRef} 
+            key="mobile-menu"
+      initial={{ x: "100%" }}
+      animate={{ x: 0 }}
+      exit={{ x: "100%" }}
+      transition={{ type: "tween", duration: 0.3 }}
+      className={`z-60 ${screenWidth >= 768 ? "transform-none static" : "fixed top-0 right-0 h-fit w-full bg-white shadow-lg"} `}
+          >
           <Navbar setIsMenuOpen={setIsMenuOpen} />
-        </div>
-        ): null}
-          
+        </motion.div>
+        )}
+          </AnimatePresence>
       </div>
       
     </div>
-    <div className="w-full h-[25px] bg-customRed text-center">
+    <div className="fixed md:static top-[118px] md:top-[129px] w-full h-[25px] bg-customRed text-center">
       <h2 className="text-lg font-semibold text-white">POP-UP UTSTILLING 13/4 - 31/5</h2>
     </div>
     </div>
